@@ -32,6 +32,12 @@ jobs:
         run: |
           git config user.name "Matheus Jesus de Oliveira"
           git config user.email "32xxthunderxx32@gmail.com"
-          git add .
-          git commit -m "MonkeyInf is running" || echo "nada mudou"
-          git push
+          git status
+          git add infinite-monkey/logs/ infinite-monkey/src/app/gen-text/gen-text.html
+          git status
+          if git diff --staged --quiet; then
+            echo "Nenhuma mudança para commitar"
+          else
+            git commit -m "MonkeyInf is running"
+            git push
+          fi

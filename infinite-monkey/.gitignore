@@ -42,5 +42,5 @@ __screenshots__/
 .DS_Store
 Thumbs.db
 
-# Logs
-/logs
+# Logs (mantendo logs do macaco no repositório)
+# /logs
