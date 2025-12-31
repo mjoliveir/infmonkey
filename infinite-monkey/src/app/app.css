@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* título */
+.title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 8em;
+  font-weight: bold;
+}
+
+/* container principal */
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* ascii */
+.ascii {
+  font-size: 1.1em;
+
+}
+
+/* texto */
+.text {
+  max-width: 600px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
