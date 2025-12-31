@@ -22,9 +22,11 @@ jobs:
 
       - name: Instalar dependências
         run: npm install
+        working-directory: ./infinite-monkey
 
       - name: Rodar o macaco
         run: npm run macaco
+        working-directory: ./infinite-monkey
 
       - name: Commitar mudanças
         run: |
