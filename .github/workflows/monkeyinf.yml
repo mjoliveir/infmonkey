@@ -1,0 +1,35 @@
+name: MonkeyInf
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  macaco:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar o macaco
+        run: npm run macaco
+
+      - name: Commitar mudanças
+        run: |
+          git config user.name "Matheus Jesus de Oliveira"
+          git config user.email "32xxthunderxx32@gmail.com"
+          git add .
+          git commit -m "MonkeyInf is running" || echo "nada mudou"
+          git push

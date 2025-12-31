@@ -4,6 +4,25 @@ body {
   color: #fff;
 }
 
+.tomi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-yellow);
+  text-align: center;  
+  max-width: 70%;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 5em;
+  border: 1px solid var(--primary-yellow);
+  box-sizing: border-box;
+  padding: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
 .page {
   min-height: 100vh;
   display: flex;
@@ -38,10 +57,14 @@ body {
 /* texto */
 .text {
   max-width: 600px;
-  background-color: #000;
+  background-color: var(--background-yellow);
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-yellow);
   padding: 20px;
   font-size: 20px;
   text-align: justify;
+}
+
+.idk{
+  color: var(--primary-yellow);
 }
