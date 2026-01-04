@@ -9,13 +9,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './gen-text.html',
   styleUrl: './gen-text.css',
 })
-export class GenText implements OnInit, OnDestroy {
+export class GenText implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
+
 
   // visibleText: string = '';
 

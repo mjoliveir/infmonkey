@@ -1,18 +1,16 @@
-import { Component, signal, OnInit, AfterViewInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { GenText } from "./gen-text/gen-text";
-import { RouterModule } from '@angular/router';
-import { History } from './history/history';
-import { Header } from './header/header';
-  
+import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { GenText } from '../gen-text/gen-text';
+
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet, GenText, RouterModule, History, Header],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  selector: 'app-home',
+  imports: [RouterLink, CommonModule, GenText],
+  templateUrl: './home.html',
+  styleUrl: './home.css',
   standalone: true
 })
-export class App implements OnInit, AfterViewInit {
+export class Home {
   protected readonly title = signal('infinite-monkey');
   onlineDays: number = 0;
   charNumber: number = 0;
@@ -47,3 +45,5 @@ export class App implements OnInit, AfterViewInit {
     }
   }
 }
+
+
