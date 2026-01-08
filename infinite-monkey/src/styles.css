@@ -6,9 +6,25 @@
 
   --primary-yellow: yellow;
   --background-yellow: rgb(32, 32, 0);
+  --background-yellow-hover: rgb(255, 247, 131);
 }
 
 body {
   background-color: #000;
   color: #fff;
+}
+
+button{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+  background-color: var(--background-yellow);
+  border: var(--primary-yellow), 1px, solid;
+  transition: background-color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+button:hover{
+  background-color: var(--background-yellow-hover) !important;
+  color: black;
 }

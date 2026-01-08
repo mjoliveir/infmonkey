@@ -3,6 +3,12 @@ body {
     background: #000;
     color: #fff;
   }
+
+  button{
+    font-size: 1.1em;
+    background-color: var(--background-yellow);
+    border: var(--primary-yellow), 1px, solid;
+  }
   
   .tomi{
     display: flex;
