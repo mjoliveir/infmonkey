@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
+    color-scheme: dark;
   --primary-green: green;
   --background-green: rgb(0, 31, 0);
 
@@ -10,11 +11,12 @@
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #1a1800;
+  color: #fff !important;
 }
 
 button{
+  color: #fff;
   font-family: 'Times New Roman', Times, serif;
   font-size: 2em;
   background-color: var(--background-yellow);
@@ -27,4 +29,8 @@ button{
 button:hover{
   background-color: var(--background-yellow-hover) !important;
   color: black;
+}
+
+p-menubar{
+  color: #fff !important;
 }

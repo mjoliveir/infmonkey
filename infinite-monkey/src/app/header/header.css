@@ -9,7 +9,45 @@ body {
     background-color: var(--background-yellow);
     border: var(--primary-yellow), 1px, solid;
   }
+/* 
+  p-menubar{
+    display: flex!importa;
+  } */
   
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .top-bar.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  
+
+p-menubar{
+  background-color: var(--background-yellow)!important;
+  border: 1px, solid, var(--primary-yellow);
+  border-radius: 0;
+  color: #fff !important; 
+  width: 100% !important;
+}
+
+p-menubar .top-bar {
+  color: #fff !important;
+}
+
   .tomi{
     display: flex;
     justify-content: center;
